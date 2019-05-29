@@ -2,9 +2,9 @@ import ProcessGenerator as pg
 import Random as rd
 
 N = 100  # number of processors
-p = 80
-z = 3
-processes = 1000  # number of processes
+p = 80  # threshold
+z = 3  # number of retries
+processes = 2000  # amount of processes
 process_list = []
 for i in range(processes):
     process_list.append(pg.ProcessGen(N))
